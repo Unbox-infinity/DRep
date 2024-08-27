@@ -1,0 +1,79 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP100:IdentityReference",
+            "Link": "CIP100:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "givenName": "Unbox the Universe",
+    "motivations": "Unbox provides you with the tools to create Smart Tokens that connect and combine the physical and digital worlds. Unbox Smart Tokens allow you to embed your own values into identities, assets and transactions. Ensure secure and programmable interactions that unlock new possibilities for efficiency, transparency and trust.",
+    "objectives": "As a leading infrastructure company on Cardano, Unbox the Universe is deeply committed to the growth and decentralization of the ecosystem. Becoming a DRep allows us to play an active role in the governance process, ensuring that the voices of both innovators and the wider community are heard. We want to help shape the future of Cardano by bringing our expertise, experience, and dedication to the table, fostering a resilient and thriving ecosystem.",
+    "paymentAddress": "addr1q9kp23szf0sr26g636tpnwun42wq33urljwwl2kg4w49rt9k0rvhspjr7d0slytnn45j3588na2yuff2ue02wn97dceqe8f63r",
+    "qualifications": "Unbox the Universe has consistently delivered projects that reflect our commitment to positive global impact, aligning with Cardano’s mission to drive change through blockchain technology.",
+    "references": [
+      {
+        "@type": "Other",
+        "label": "Label",
+        "uri": "https://www.unboxuniverse.com/"
+      },
+      {
+        "@type": "Other",
+        "label": "Label",
+        "uri": "https://x.com/Unbox_Universe/"
+      },
+      {
+        "@type": "Other",
+        "label": "Label",
+        "uri": "https://www.linkedin.com/company/unboxuniverse/"
+      }
+    ]
+  }
+}
